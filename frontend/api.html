@@ -4,22 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Javascript and HTML | Vivian Ni</title>
+<title>Symptom API | Vivian Ni</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Javascript and HTML" />
-<meta name="author" content="Vivian" />
+<meta property="og:title" content="Symptom API" />
+<meta name="author" content="Vivian Ni" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Using HTML fragments and JavaScript data to build a table" />
-<meta property="og:description" content="Using HTML fragments and JavaScript data to build a table" />
-<link rel="canonical" href="https://vivianknee.github.io/VaseProject/frontend/jsTable" />
-<meta property="og:url" content="https://vivianknee.github.io/VaseProject/frontend/jsTable" />
+<meta name="description" content="Calling and displaying information from AWS flask server" />
+<meta property="og:description" content="Calling and displaying information from AWS flask server" />
+<link rel="canonical" href="https://vivianknee.github.io/VaseProject/frontend/api" />
+<meta property="og:url" content="https://vivianknee.github.io/VaseProject/frontend/api" />
 <meta property="og:site_name" content="Vivian Ni" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-21T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-10-23T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Javascript and HTML" />
+<meta property="twitter:title" content="Symptom API" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian"},"dateModified":"2022-09-21T00:00:00-05:00","datePublished":"2022-09-21T00:00:00-05:00","description":"Using HTML fragments and JavaScript data to build a table","headline":"Javascript and HTML","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/frontend/jsTable"},"url":"https://vivianknee.github.io/VaseProject/frontend/jsTable"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian Ni"},"dateModified":"2022-10-23T00:00:00-05:00","datePublished":"2022-10-23T00:00:00-05:00","description":"Calling and displaying information from AWS flask server","headline":"Symptom API","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/frontend/api"},"url":"https://vivianknee.github.io/VaseProject/frontend/api"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/VaseProject/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/VaseProject/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/VaseProject/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -74,11 +74,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Javascript and HTML</h1><p class="page-description">Using HTML fragments and JavaScript data to build a table</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-21T00:00:00-05:00" itemprop="datePublished">
-        Sep 21, 2022
+    <h1 class="post-title p-name" itemprop="name headline">Symptom API</h1><p class="page-description">Calling and displaying information from AWS flask server</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-23T00:00:00-05:00" itemprop="datePublished">
+        Oct 23, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Vivian</span></span>
+            <span class="p-author h-card" itemprop="name">Vivian Ni</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -90,9 +90,6 @@ window.onload = wrap_img;
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
         <a class="category-tags-link" href="/VaseProject/categories/#markdown">markdown</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/VaseProject/categories/#week5">week5</a>
         
       
       </p>
@@ -101,88 +98,25 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <table>
+    <ul id="toc" class="section-nav">
+</ul><table>
     <tr>
-        <td><img src="/VaseProject//images/v.png" height="60" title="Frontend" alt="" /></td>
+        <td><img src="/VaseProject//images/v.png" height="60" title="Frontend" alt=""></td>
         <td><a href="/VaseProject/frontend/jsTable">JS Table</a></td>
         <td><a href="/VaseProject/frontend/api">Symptom API</a></td>
         <td><a href="/VaseProject/frontend/vaseapi">Custom VASE API</a></td>
     </tr>
 </table>
 
-<html>
-<body>
-<p id="intro">Using HTML fragments and Javascript to build a table.</p>
-
-<button type="button" onclick="document.getElementById(&quot;intro&quot;).innerHTML = &quot;yay!&quot;">Click Me!</button>
-
-<div id="myTable"></div>
-
-<script>
-    function book(name, author, genre) {
-        this.name = name; 
-        this.author = author;
-        this.genre = genre;
-    }
-
-    var books = [ 
-        new book("Angels and Demons", "Dan Brown", "Action"),
-        new book("Scythe", "Neal Shusterman", "Dystopian Fiction"),
-        new book("Inferno", "Dan Brown", "Action"),
-        new book("Holes", "Louis Sachar", "Realistic Fiction"),
-        new book("Murder on the Orient Express", "Agatha Christie", "Mystery"),
-    ];
-
-    // define a library and build Library objects and json
-    function library(books){  
-        // add each book to library
-        this.books = books;
-        this.library = [];
-        this.books.forEach(book => {this.library.push(book);});
-    }
-    printBooks = new library(books);
-
-    library.prototype._toHtml = function() {
-    var style = (
-        "display:inline-block;" +
-        "border: 2px solid blue;"
-    );
-
-    var body = "";
-
-    body += "<tr>";
-    body += "<th>" + "Title" + "</th>";
-    body += "<th>" + "Author" + "</th>";
-    body += "<th>" + "Genre" + "</th>";
-    body += "</tr>";
-
-    for (var row of printBooks.library) {
-    body += "<tr>";
-    body += "<td>" + row.name + "</td>";
-    body += "<td>" + row.author + "</td>";
-    body += "<td>" + row.genre + "</td>";
-    body += "<tr>";
-    }
-
-
-    // Build and HTML fragment of div, table, table body
-    return (
-        "<div style='" + style + "'>" +
-            "<table>" +
-                body +
-            "</table>" +
-        "</div>"
-        );
-    };
-    
-    document.getElementById('myTable').innerHTML = printBooks._toHtml();
-
-</script>
-
-</body>
-</html>
-
-  </div><a class="u-url" href="/VaseProject/frontend/jsTable" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="vivianknee/VaseProject"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/VaseProject/frontend/api" hidden></a>
 </article>
 
       </div>

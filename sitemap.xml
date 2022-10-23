@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://vivianknee.github.io/VaseProject/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://vivianknee.github.io/VaseProject/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://vivianknee.github.io/VaseProject/jupyter/week2/2022/08/30/lists.html</loc>
-<lastmod>2022-08-30T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://vivianknee.github.io/VaseProject/markdown/week5/2022/09/21/bigidea.html</loc>
-<lastmod>2022-09-21T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://vivianknee.github.io/VaseProject/week5/jsKernel</loc>
 <lastmod>2022-09-21T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -27,6 +11,14 @@
 <url>
 <loc>https://vivianknee.github.io/VaseProject/week7/rapidapi</loc>
 <lastmod>2022-10-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://vivianknee.github.io/VaseProject/frontend/api</loc>
+<lastmod>2022-10-23T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://vivianknee.github.io/VaseProject/frontend/vaseapi</loc>
+<lastmod>2022-10-23T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://vivianknee.github.io/VaseProject/about/</loc>
