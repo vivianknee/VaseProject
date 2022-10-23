@@ -81,17 +81,6 @@
   
   
       ,"page0": {
-          "title": "APCSP Blog",
-          "content": "Week Sprint Review Ticket Summary . 7 | API | Review Ticket 7 | I learned how to format and pull data from an API. I also took notes on my collegeboard MC quizzes | . 6 | Deployment | N/A | We worked with AWS | . 5 | UI Starters | Review Ticket 5 | This week we learned how to use HTML Fragments and Javascript to create objects, arrays, and datatables. Here is me using Javascript with Jupyter notebook and the kernel. I also made a separate javascript table to show what books I like. Finally, I made a frontend table using HTML. | . 4 | Python Web Server Project | Review Ticket 4 | In the video I made for week 4, I go over my CSP Journey and takeaways from the psychology video as well as the process I took to do my local server | . 3 | Creative Development | Review Ticket 3 | This week, we focused on creating a sample create task in preparation for the AP exam using javascript and code.org app lab. Here is the blog I wrote during the process. | . 2 | Data Abstraction | Review Ticket 2 | This week we started learning about Lists, Dictionaries, and Iterations and how to store data with them. We learned how to print and format dictionaries as well as do other more advanced things with them. In addition, we also messed around with html and the themes of our website. For example we applied a dark mode css file which changed the entire look of the site. | . 1 | Intro to Python | Review Ticket 1 | This week was super busy and more code heavy. Specifically, we began using python and bash. Using python, we made a Python Quiz and with bash we created a Bash Tool Check. The bash tool check made sure that we had all the necessary programs installed. This week was also an opportunity to personalize our website so I made a page consisting of My Art with Images and Tables. Finally, we had to show proof of our blogging both in csp which I did through APCSP Vocab and for Schoolwork outside of csp. | . 0 | Tool Setup | Review Ticket 0 | We learned how to make our first markdown posts and jupyter notebooks. My first makedown post was my About Me and my First Post. In order to do this, we had to set up wsl, vscode, and download numerous other programs like anaconda, bash, python, and more. | .",
-          "url": "https://vivianknee.github.io/VaseProject/_pages/002apcspblog.html",
-          "relUrl": "/_pages/002apcspblog.html",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page1": {
           "title": "About Me",
           "content": "This website is powered by Vivian . Who am I? . . . My name is Vivian and I am a junior at Del Norte High School. I love going to the beach, reading a good book, and walking my dog. I believe that peanut butter cookies are the best cookie (no rebuttal). Some of my hobbies include graphic design, digital art, and cybersecurity :) . What I&#39;m Passionate About . . I am part of the CyberAegis team and participate in Cyberpatriot competitions I enjoy graphic design and marketing and am a marketing coordinator for SAGE, a nonprofit organization I enjoy doing research on subjects I&#39;m interested in. I recently attended a research program at UCSD . | | | .",
           "url": "https://vivianknee.github.io/VaseProject/about/",
@@ -102,22 +91,11 @@
   
 
   
-      ,"page2": {
-          "title": "Vocab",
-          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | Variables: a way to name, store, data and reference data. Lists and Dictionaries are variables with extended features for storing and retrieving data. Lists, think of [] square brackets, are a way of grouping data in an ordered sequence | Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships | . | Concatenation: the operation of joining two strings together | static text: text that does not change. for example, a string | . Linux/Ubuntu Commands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory &lt;/ul&gt; | | .",
-          "url": "https://vivianknee.github.io/VaseProject/Vocab/",
-          "relUrl": "/Vocab/",
-          "date": ""
-      }
-      
-  
 
   
 
   
-
-  
-      ,"page5": {
+      ,"page3": {
           "title": "Frontend",
           "content": "| JS Table | Using the JS Kernel | API | .",
           "url": "https://vivianknee.github.io/VaseProject/_pages/Frontend.html",
@@ -147,7 +125,7 @@
   
 
   
-      ,"page13": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/VaseProject/robots.txt",
