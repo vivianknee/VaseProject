@@ -1,1 +1,1 @@
-Sitemap: https://vivianknee.github.io/FastPages/sitemap.xml
+Sitemap: https://vivianknee.github.io/VaseProject/sitemap.xml
