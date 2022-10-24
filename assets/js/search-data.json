@@ -48,6 +48,17 @@
   
   
       ,"page0": {
+          "title": "Progress",
+          "content": "| Week | Scrum Master | Frontend Dev | Backend Dev | DevOp | Completed Work | |-|-|-|-|-|-| .",
+          "url": "https://vivianknee.github.io/VaseProject/progress/",
+          "relUrl": "/progress/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
           "title": "About Us",
           "content": "This website is powered by VASE . Who are we? . . . Emma Shen: Scrum Master | Vivian Ni: Frontend Developer | Sarah Liu: Backend Developer | Amay Advani: DevOp | . .",
           "url": "https://vivianknee.github.io/VaseProject/about/",
@@ -62,7 +73,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Frontend",
           "content": "| JS Table | Symptom API | Custom VASE API | .",
           "url": "https://vivianknee.github.io/VaseProject/_pages/Frontend.html",
@@ -92,7 +103,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/VaseProject/robots.txt",
