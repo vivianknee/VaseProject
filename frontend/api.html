@@ -156,8 +156,8 @@ window.onload = wrap_img;
       response.json().then(data => {
           console.log(data);
             for (const diagnosis of Object.keys(data)) {
-                const symptom = data[diagnosis];
-                console.log(diagnosis, symptom);
+                const symptoms = data[diagnosis];
+                console.log(diagnosis, symptoms);
             
                 const tr = document.createElement("tr");
             
