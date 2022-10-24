@@ -162,14 +162,14 @@ window.onload = wrap_img;
                 const tr = document.createElement("tr");
             
             // td for diagnosis cell
-                const diagnosis = document.createElement("td");
-                diagnosis.innerHTML = diagnosis;  // add fetched data to innerHTML
+                const diagnosis_ele = document.createElement("td");
+                diagnosis_ele.innerHTML = diagnosis;  // add fetched data to innerHTML
 
-                 const symptom = document.createElement("td");
-                 symptom.innerHTML = symptom;
+                 const symptom_ele = document.createElement("td");
+                 symptom_ele.innerHTML = symptoms.toString();
             // this builds ALL td's (cells) into tr (row) element
-                tr.appendChild(diagnosis);
-                tr.appendChild(symptom);
+                tr.appendChild(diagnosis_ele);
+                tr.appendChild(symptom_ele);
             }
 
             // make "tr element" for each "row of data"
