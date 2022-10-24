@@ -153,7 +153,7 @@ const resultContainer = document.getElementById("result");
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-            for (const symptoms of Object.keys(data)) {
+            for (const symptoms in data){
                 console.log(symptoms);
             
                 const tr = document.createElement("tr");
@@ -168,7 +168,7 @@ const resultContainer = document.getElementById("result");
  
           })
       })
-  //})
+
   // catch fetch errors (ie Nginx ACCESS to server blocked)
   .catch(err => {
     error(err + " " + url);
