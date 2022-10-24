@@ -125,7 +125,7 @@ window.onload = wrap_img;
 <script>
 const resultContainer = document.getElementById("result");
 
-  const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis";
+  const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/symptoms";
 
   // prepare fetch GET options
   const options = {
@@ -153,9 +153,8 @@ const resultContainer = document.getElementById("result");
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-            for (const diagnosis of Object.keys(data)) {
-                const symptoms = data[diagnosis];
-                console.log(diagnosis, symptoms);
+            for (const symptoms of Object.keys(data)) {
+                console.log(symptoms);
             
                 const tr = document.createElement("tr");
             
