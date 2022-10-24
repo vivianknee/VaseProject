@@ -111,10 +111,9 @@ window.onload = wrap_img;
 <table>
   <thead>
   <tr>
-    <th>Diagnosis</th>
     <th>Symptoms</th>
-    <th>Yes I have it</th>
-    <th>No I feel fine</th>
+    <th>Yes</th>
+    <th>No</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -160,14 +159,10 @@ const resultContainer = document.getElementById("result");
             
                 const tr = document.createElement("tr");
             
-            // td for diagnosis cell
-                const diagnosis_ele = document.createElement("td");
-                diagnosis_ele.innerHTML = diagnosis;  // add fetched data to innerHTML
-
                  const symptom_ele = document.createElement("td");
                  symptom_ele.innerHTML = symptoms.toString();
-            // this builds ALL td's (cells) into tr (row) element
-                tr.appendChild(diagnosis_ele);
+            
+            // this builds ALL td's (cells) into tr element
                 tr.appendChild(symptom_ele);
                 resultContainer.appendChild(tr);
             }
