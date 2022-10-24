@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Symptom API",
-            "content": "| JS Table | Symptom API | Custom VASE API | . Symptom Category Yes I have it No I feel fine .",
+            "content": "| JS Table | Symptom API | Custom VASE API | . Diagnosis Symptoms Yes I have it No I feel fine .",
             "url": "https://vivianknee.github.io/VaseProject/frontend/api",
             "relUrl": "/frontend/api",
             "date": " • Oct 23, 2022"
