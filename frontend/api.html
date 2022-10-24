@@ -156,9 +156,10 @@ window.onload = wrap_img;
       response.json().then(data => {
           console.log(data);
           for ((key, value) in data) {
+             console.log(key, value);
           //for (const row of data) {
             // make "tr element" for each "row of data"
-            const tr = document.createElement("tr");
+            //const tr = document.createElement("tr");
             
             // td for joke cell
             // const diagnosis = document.createElement("td");
