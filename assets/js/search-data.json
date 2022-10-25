@@ -94,7 +94,6 @@
   
 
   
-  
 
   
   
@@ -103,7 +102,10 @@
   
 
   
-      ,"page12": {
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/VaseProject/robots.txt",
