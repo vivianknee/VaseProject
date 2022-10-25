@@ -1,20 +1,16 @@
----
-layout: home
-search_exclude: true
----
+$Btn : rgb(121, 147, 234)
+$textColor: white; 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-   h1 {color:white (0, 0, 0); font-family: Garamond, serif; font-size: 50px;}
-   h3 {color:white ; font-family: Garamond, serif; font-size: 40px;}
-   h2 {color:white (0, 0, 0); font-family: Garamond, serif; font-size: 30px;}
-</style>
-</head>
-<body style="background-color:add_color rgb(130, 130, 255));">
-    <h1 align="center">
-        <b>
-            Welcome to the VASE Website!
-        </b>
-    </h1>
+
+header{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    color: $textColor
+    button{
+        background: $Btn;
+        &:hover{
+         background: pink; 
+        }
+    }
+}   
