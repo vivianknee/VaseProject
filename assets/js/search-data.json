@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "VASE API",
-            "content": "| Symptom API | Custom VASE API | . Symptoms Yes No .",
+            "content": "&lt;!DOCTYPE html&gt; . VASE Diagnosis System . Symptoms Yes No . Not Checked . &lt;script src=checkscript.js&gt;&lt;/script&gt; .",
             "url": "https://vivianknee.github.io/VaseProject/frontend/vaseapi",
             "relUrl": "/frontend/vaseapi",
             "date": " • Oct 23, 2022"

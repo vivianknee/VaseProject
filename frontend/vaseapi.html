@@ -99,26 +99,30 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-</ul><table>
-    <tr>
-        <td><img src="/VaseProject//images/v.png" height="60" title="Frontend" alt=""></td>
-        <td><a href="/VaseProject/frontend/api">Symptom API</a></td>
-        <td><a href="/VaseProject/frontend/vaseapi">Custom VASE API</a></td>
-    </tr>
-</table>
+</ul><body>
+<p>&lt;!DOCTYPE html&gt;</p>
 
-<table>
-  <thead>
-  <tr>
-    <th>Symptoms</th>
-    <th>Yes</th>
-    <th>No</th>
-  </tr>
-  </thead>
-  <tbody id="result">
-    <!-- javascript generated data -->
-  </tbody>
-</table>
+
+  <title>VASE Diagnosis System</title>
+
+
+  <table>
+    <thead>
+    <tr>
+      <th>Symptoms</th>
+      <th>Yes</th>
+      <th>No</th>
+    </tr>
+    </thead>
+    <tbody id="result">
+      <link rel="stylesheet" href="vase.scss">
+      <input type="checkbox" id="my-checkbox" onclick="isChecked()">
+      <p id="message">Not Checked</p>
+      &lt;script src=checkscript.js&gt;&lt;/script&gt; 
+    </tbody>
+  </table>
+
+
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -187,7 +191,7 @@ const resultContainer = document.getElementById("result");
 
 </script>
 
-
+</body>
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="vivianknee/VaseProject"
