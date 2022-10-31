@@ -22,8 +22,7 @@ comments: true
                 <thead>
                     <tr>
                         <th>Symptoms</th>
-                        <th>Yes</th>
-                        <th>No</th>
+                        <th>Yes or No</th>
                     </tr>
                     </thead>
                     <tbody id="result">
@@ -64,32 +63,23 @@ comments: true
                 response.json().then(data => {
                     console.log(data);
 
-                        for (const symptoms of data){
-                            console.log(symptoms);
+                        for (const symptom of data){
+                            console.log(symptom);
                         
                             const tr = document.createElement("tr");
                         
                             const symptom_ele = document.createElement("td");
-                            symptom_ele.innerHTML = symptoms.toString();
+                            symptom_ele.innerHTML = symptom.toString();
 
-                            const yes = document.createElement("td");
-                            var yesbox = document.createElement('input');
-                                yesbox.type = "checkbox";
-                                yesbox.name = "name";
-                                yesbox.value = "value";
-                                yesbox.id = "id";
-
-                            const no = document.createElement("td");
-                            var nobox = document.createElement('input');
-                                nobox.type = "checkbox";
-                                nobox.name = "name";
-                                nobox.value = "value";
-                                nobox.id = "id";
+                            const status = document.createElement("td");
+                            var x = document.createElement("INPUT");
+                            x.setAttribute("type", "checkbox");
+                            x.setAttribute("id", symptom.toString());
+                            status.appendChild(x);
 
                         // this builds ALL td's (cells) into tr element
-                            td.appendChild(yes);
-                            td.appendChild(no);
                             tr.appendChild(symptom_ele);
+                            tr.appendChild(status);
                             resultContainer.appendChild(tr);
                         }
             
