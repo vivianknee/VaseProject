@@ -1,10 +1,8 @@
 ---
 toc: true
 layout: post
-description: Making adjustments to the jokes API. Calling and displaying information from AWS flask server
 author: Vivian Ni
 categories: [markdown]
-permalink: /frontend/vaseapi
 title: VASE API
 comments: true
 ---
