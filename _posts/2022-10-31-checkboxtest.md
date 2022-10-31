@@ -27,7 +27,7 @@ comments: true
                     </tr>
                     </thead>
                     <tbody id="result">
-                </tbody>
+                    </tbody>
             </table>
     </div>
 </body>
@@ -87,8 +87,8 @@ comments: true
                                 nobox.id = "id";
 
                         // this builds ALL td's (cells) into tr element
-                            tr.appendChild(yes);
-                            tr.appendChild(no);
+                            td.appendChild(yes);
+                            td.appendChild(no);
                             tr.appendChild(symptom_ele);
                             resultContainer.appendChild(tr);
                         }
