@@ -99,14 +99,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-</ul><body>
-<p>&lt;!DOCTYPE html&gt;</p>
-
-
-  <title>VASE Diagnosis System</title>
-
-
-  <table>
+</ul><table>
     <thead>
     <tr>
       <th>Symptoms</th>
@@ -115,14 +108,8 @@ window.onload = wrap_img;
     </tr>
     </thead>
     <tbody id="result">
-      <link rel="stylesheet" href="vase.scss">
-      <input type="checkbox" id="my-checkbox" onclick="isChecked()">
-      <p id="message">Not Checked</p>
-      &lt;script src=checkscript.js&gt;&lt;/script&gt; 
     </tbody>
   </table>
-
-
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -163,7 +150,11 @@ const resultContainer = document.getElementById("result");
             
                 const symptom_ele = document.createElement("td");
                 symptom_ele.innerHTML = symptoms.toString();
-            
+
+                const yes = document.createElement("td");
+                
+                const no = document.createElement("td");
+
             // this builds ALL td's (cells) into tr element
                 tr.appendChild(symptom_ele);
                 resultContainer.appendChild(tr);
@@ -191,7 +182,7 @@ const resultContainer = document.getElementById("result");
 
 </script>
 
-</body>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="vivianknee/VaseProject"
