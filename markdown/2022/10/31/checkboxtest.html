@@ -9,8 +9,8 @@
 <meta property="og:title" content="Checkbox Prototype" />
 <meta name="author" content="Vivian Ni" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No" />
-<meta property="og:description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No" />
+<meta name="description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes or No" />
+<meta property="og:description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes or No" />
 <link rel="canonical" href="https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html" />
 <meta property="og:url" content="https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html" />
 <meta property="og:site_name" content="VASE" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Checkbox Prototype" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian Ni"},"dateModified":"2022-10-31T00:00:00-05:00","datePublished":"2022-10-31T00:00:00-05:00","description":"VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No","headline":"Checkbox Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"},"url":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian Ni"},"dateModified":"2022-10-31T00:00:00-05:00","datePublished":"2022-10-31T00:00:00-05:00","description":"VASE Diagnosis System Please select the symptoms you have. Symptoms Yes or No","headline":"Checkbox Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"},"url":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/VaseProject/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/VaseProject/feed.xml" title="VASE" /><link rel="shortcut icon" type="image/x-icon" href="/VaseProject/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -114,8 +114,7 @@ window.onload = wrap_img;
                 <thead>
                     <tr>
                         <th>Symptoms</th>
-                        <th>Yes</th>
-                        <th>No</th>
+                        <th>Yes or No</th>
                     </tr>
                     </thead>
                     <tbody id="result">
@@ -156,32 +155,23 @@ window.onload = wrap_img;
                 response.json().then(data => {
                     console.log(data);
 
-                        for (const symptoms of data){
-                            console.log(symptoms);
+                        for (const symptom of data){
+                            console.log(symptom);
                         
                             const tr = document.createElement("tr");
                         
                             const symptom_ele = document.createElement("td");
-                            symptom_ele.innerHTML = symptoms.toString();
+                            symptom_ele.innerHTML = symptom.toString();
 
-                            const yes = document.createElement("td");
-                            var yesbox = document.createElement('input');
-                                yesbox.type = "checkbox";
-                                yesbox.name = "name";
-                                yesbox.value = "value";
-                                yesbox.id = "id";
-
-                            const no = document.createElement("td");
-                            var nobox = document.createElement('input');
-                                nobox.type = "checkbox";
-                                nobox.name = "name";
-                                nobox.value = "value";
-                                nobox.id = "id";
+                            const status = document.createElement("td");
+                            var x = document.createElement("INPUT");
+                            x.setAttribute("type", "checkbox");
+                            x.setAttribute("id", symptom.toString());
+                            status.appendChild(x);
 
                         // this builds ALL td's (cells) into tr element
-                            td.appendChild(yes);
-                            td.appendChild(no);
                             tr.appendChild(symptom_ele);
+                            tr.appendChild(status);
                             resultContainer.appendChild(tr);
                         }
             

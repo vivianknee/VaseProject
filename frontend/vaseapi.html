@@ -143,13 +143,13 @@ const resultContainer = document.getElementById("result");
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-            for (const symptoms of data){
-                console.log(symptoms);
+            for (const symptom of data){
+                console.log(symptom);
             
                 const tr = document.createElement("tr");
             
                 const symptom_ele = document.createElement("td");
-                symptom_ele.innerHTML = symptoms.toString();
+                symptom_ele.innerHTML = symptom.toString();
 
                 const yes = document.createElement("td");
                 
