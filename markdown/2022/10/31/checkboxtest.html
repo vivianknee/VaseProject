@@ -9,8 +9,8 @@
 <meta property="og:title" content="Checkbox Prototype" />
 <meta name="author" content="Vivian Ni" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="&lt;!DOCTYPE html&gt; VASE Diagnosis System Please select the symptoms you have. Symptom" />
-<meta property="og:description" content="&lt;!DOCTYPE html&gt; VASE Diagnosis System Please select the symptoms you have. Symptom" />
+<meta name="description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No" />
+<meta property="og:description" content="VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No" />
 <link rel="canonical" href="https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html" />
 <meta property="og:url" content="https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html" />
 <meta property="og:site_name" content="VASE" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Checkbox Prototype" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian Ni"},"dateModified":"2022-10-31T00:00:00-05:00","datePublished":"2022-10-31T00:00:00-05:00","description":"&lt;!DOCTYPE html&gt; VASE Diagnosis System Please select the symptoms you have. Symptom","headline":"Checkbox Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"},"url":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vivian Ni"},"dateModified":"2022-10-31T00:00:00-05:00","datePublished":"2022-10-31T00:00:00-05:00","description":"VASE Diagnosis System Please select the symptoms you have. Symptoms Yes No","headline":"Checkbox Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"},"url":"https://vivianknee.github.io/VaseProject/markdown/2022/10/31/checkboxtest.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/VaseProject/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/VaseProject/feed.xml" title="VASE" /><link rel="shortcut icon" type="image/x-icon" href="/VaseProject/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -100,26 +100,94 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 </ul><body>
-<p>&lt;!DOCTYPE html&gt;</p>
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VASE Diagnosis System</title>
 
 
-    <div class="container">
+    <div>
         <p class="title">
             Please select the symptoms you have.
         </p>
-        <div class="box">
-            <div>
-                <input type="checkbox" value="javaScript" class="checkbox">
-                <label for="javaScript">Symptom</label>
-            </div>
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symptoms</th>
+                        <th>Yes</th>
+                        <th>No</th>
+                    </tr>
+                    </thead>
+                    <tbody id="result">
+                </tbody>
+            </table>
     </div>
 
+
+
+<script> 
+    const resultContainer = document.getElementById("result");
+        
+        const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/symptoms";
+
+        const options = {
+            method: 'GET', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'omit', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        };
+        // prepare fetch PUT options, clones with JS Spread Operator (...)
+        const put_options = {...options, method: 'PUT'}; // clones and replaces method
+
+        // fetch the API
+        fetch(url, options)
+            // response is a RESTful "promise" on any successful fetch
+            .then(response => {
+                // check for response errors
+                if (response.status !== 200) {
+                    error('GET API response failure: ' + response.status);
+                    return;
+                }
+                // valid response will have JSON data
+                response.json().then(data => {
+                    console.log(data);
+
+                        for (const symptoms of data){
+                            console.log(symptoms);
+                        
+                            const tr = document.createElement("tr");
+                        
+                            const symptom_ele = document.createElement("td");
+                            symptom_ele.innerHTML = symptoms.toString();
+
+                            const yes = document.createElement("td");
+                            var yesbox = document.createElement('input');
+                                yesbox.type = "checkbox";
+                                yesbox.name = "name";
+                                yesbox.value = "value";
+                                yesbox.id = "id";
+
+                            const no = document.createElement("td");
+                            var nobox = document.createElement('input');
+                                nobox.type = "checkbox";
+                                nobox.name = "name";
+                                nobox.value = "value";
+                                nobox.id = "id";
+
+                        // this builds ALL td's (cells) into tr element
+                            tr.appendChild(yes);
+                            tr.appendChild(no);
+                            tr.appendChild(symptom_ele);
+                            resultContainer.appendChild(tr);
+                        }
+            
+                    })
+                })
+ </script>
 
 </body>
   </div><!-- from https://github.com/utterance/utterances -->
