@@ -75,6 +75,16 @@ comments: true
                             var x = document.createElement("INPUT");
                             x.setAttribute("type", "checkbox");
                             x.setAttribute("id", symptom.toString());
+                            x.setAttribute("class", "cell-center");
+
+                            x.addEventListener('change', (event) => {
+                                if (event.currentTarget.checked) {
+                                    alert(this.id + ' checked');
+                                } else {
+                                    alert(this.id + ' not checked');
+                                }
+                            })
+
                             status.appendChild(x);
 
                         // this builds ALL td's (cells) into tr element
