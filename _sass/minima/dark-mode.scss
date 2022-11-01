@@ -1,11 +1,11 @@
-$high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69); //Noicee
-$low-emph: rgba(white, 0.38);
-$dark-grey : #1d1838; 
+$high-emph: rgba(rgb(7, 0, 0), 0.87);
+$med-emph: rgba(rgb(9, 9, 9), 0.69); //Noicee
+$low-emph: rgba(rgb(9, 8, 8), 0.38);
+$dark-grey : #f3f2f7; 
 $clear: clear;
 // $dark-grey : #1F1B24;
-$overlay: mix($dark-grey, white, 95%);
-$overlay-light: mix($dark-grey, white, 86%);
+$overlay: mix($dark-grey, rgb(43, 39, 39), 95%);
+$overlay-light: mix($dark-grey, rgb(74, 69, 69), 86%);
 
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
@@ -19,7 +19,7 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(245, 247, 249) !important;
+    color: rgb(13, 13, 13) !important;
 }
 
 a:hover {
