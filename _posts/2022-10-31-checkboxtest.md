@@ -81,11 +81,11 @@ comments: true
                             var text = '<span> You have selected : </span>';
                             var listArray = [];
 
-                            x.addEventListener('click', (event) => {
-                                if (event.currentTarget.checked == true) {
-                                    listArray.push(event.currentTarget.id);
+                            x.addEventListener('click',function(){
+                                if (this.checked == true) {
+                                    listArray.push(this.id);
                                     symList.innerHTML = text + listArray.join(', ');
-                                    //console.log(event.currentTarget.id);
+                                    console.log(this.id);
                                 } else {
                                     console.log('you unchecked this box')
                                 }
