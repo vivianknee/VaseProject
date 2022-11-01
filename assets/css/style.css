@@ -465,6 +465,26 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(9, 9, 9, 0.69) !important; }
 
+body { background-color: white; }
+
+.table-latitude { width: 100%; }
+
+.table-latitude caption { text-transform: uppercase; font-weight: bold; color: #00ABB3; text-align: center; }
+
+.table-latitude thead { border-top: 2px solid #00ABB3; border-bottom: 2px solid #00ABB3; }
+
+.table-latitude thead th { text-transform: uppercase; text-align: center; padding: 10px; color: black; border: 1px solid #F1F1F1; }
+
+.table-latitude tbody tr { border-bottom: 1px solid #F1F1F1; color: grey; }
+
+.table-latitude tbody tr td { padding: 10px; border: 1px solid #F1F1F1; }
+
+.table-latitude tbody tr th { padding-left: 10px; border: 1px solid #F1F1F1; }
+
+.table-latitude tfoot { color: #00ABB3; font-style: italic; border-bottom: 2px solid #00ABB3; }
+
+.table-latitude tfoot tr td { padding: 10px; border: 1px solid #F1F1F1; }
+
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }

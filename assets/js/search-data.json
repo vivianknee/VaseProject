@@ -84,17 +84,6 @@
   
 
   
-      ,"page4": {
-          "title": "Frontend",
-          "content": "| Symptom API | Custom VASE API | .",
-          "url": "https://vivianknee.github.io/VaseProject/_pages/Frontend.html",
-          "relUrl": "/_pages/Frontend.html",
-          "date": ""
-      }
-      
-  
-
-  
 
   
   
@@ -116,7 +105,7 @@
   
 
   
-      ,"page13": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/VaseProject/robots.txt",
