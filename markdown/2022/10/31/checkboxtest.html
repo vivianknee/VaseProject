@@ -169,15 +169,11 @@ window.onload = wrap_img;
                             x.setAttribute("id", symptom.toString());
                             x.setAttribute("class", "cell-center");
 
-                            x.addEventListener('change', (event) => {
-                                if (event.currentTarget.checked) {
-                                    x.addEventListener('click' ,function(){
-                                        if(this.checked == true) {
-                                            console.log(this.id);
-                                        }
-                                    })
+                            x.addEventListener('click', (event) => {
+                                if (event.currentTarget.checked == true) {
+                                    console.log(event.currentTarget.id);
                                 } else {
-                                    console.log('You unchecked this checkbox');
+                                    console.log('you unchecked this box')
                                 }
                             })
 
