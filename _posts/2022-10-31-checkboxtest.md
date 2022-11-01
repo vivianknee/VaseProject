@@ -79,9 +79,13 @@ comments: true
 
                             x.addEventListener('change', (event) => {
                                 if (event.currentTarget.checked) {
-                                    alert(symptom.toString() + ' checked');
+                                    x.addEventListener('click' ,function(){
+                                        if(this.checked == true) {
+                                            console.log(this.value);
+                                        }
+                                    })
                                 } else {
-                                    alert(symptom.toString() + ' not checked');
+                                    console.log('You unchecked this checkbox');
                                 }
                             })
 
