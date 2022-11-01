@@ -475,7 +475,7 @@ body { background-color: white; }
 
 .table-latitude thead th { text-transform: uppercase; text-align: center; padding: 10px; color: black; border: 1px solid #F1F1F1; }
 
-.table-latitude tbody tr { border-bottom: 1px solid #F1F1F1; color: grey; }
+.table-latitude tbody tr { border-bottom: 1px solid #F1F1F1; color: black; }
 
 .table-latitude tbody tr td { padding: 10px; border: 1px solid #F1F1F1; }
 
