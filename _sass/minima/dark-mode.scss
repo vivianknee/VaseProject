@@ -99,3 +99,59 @@ canvas {
 li .post-meta-description {
     color: $med-emph !important;
 }
+
+
+$background: white;
+$lfs-blue: #006ac6;
+$lfs-nurse: #00ABB3;
+$lfs-black: black;
+
+body {
+    background-color: $background;
+}
+
+.table-latitude {
+    width: 100%;
+    caption {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $lfs-nurse;
+        text-align: center;
+    }
+    thead {
+        border-top: 2px solid $lfs-nurse;
+        border-bottom: 2px solid $lfs-nurse;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-black;
+            border: 1px solid #F1F1F1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: $lfs-grey;
+            td {
+                padding: 10px;
+                border: 1px solid #F1F1F1;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+    tfoot {
+        color: $lfs-nurse;
+        font-style: italic;
+        border-bottom: 2px solid $lfs-nurse;
+        tr {
+            td {
+                padding: 10px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+}
