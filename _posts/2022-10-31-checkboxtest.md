@@ -13,9 +13,6 @@ comments: true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VASE Diagnosis System</title>
 </head>
-<style>
-    tr:hover {background-color: #00ABB3;}
-</style>
 <body>
     <div>
         <p class="title">
