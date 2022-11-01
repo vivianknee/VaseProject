@@ -84,8 +84,8 @@ comments: true
                             x.addEventListener('click', (event) => {
                                 if (event.currentTarget.checked == true) {
                                     listArray.push(event.currentTarget.id);
-                                    symList.innerHTML = text + listArray.join(' , ');
-                                    console.log(event.currentTarget.id);
+                                    symList.innerHTML = text + listArray.join(', ');
+                                    //console.log(event.currentTarget.id);
                                 } else {
                                     console.log('you unchecked this box')
                                 }
