@@ -77,8 +77,14 @@ comments: true
                             x.setAttribute("id", symptom.toString());
                             x.setAttribute("class", "cell-center");
 
+                            var symList = document.getElementById('symList');
+                            var text = '<span> You have selected : </span>';
+                            var listArray = [];
+
                             x.addEventListener('click', (event) => {
                                 if (event.currentTarget.checked == true) {
+                                    listArray.push(event.currentTarget.id);
+                                    symList.innerHTML = text + listArray.join(' , ');
                                     console.log(event.currentTarget.id);
                                 } else {
                                     console.log('you unchecked this box')
