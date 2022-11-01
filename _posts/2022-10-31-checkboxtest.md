@@ -81,7 +81,7 @@ comments: true
                                 if (event.currentTarget.checked) {
                                     x.addEventListener('click' ,function(){
                                         if(this.checked == true) {
-                                            console.log(this.value);
+                                            console.log(this.id);
                                         }
                                     })
                                 } else {
