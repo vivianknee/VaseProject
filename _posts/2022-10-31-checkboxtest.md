@@ -22,7 +22,7 @@ comments: true
                 <thead>
                     <tr>
                         <th>Symptoms</th>
-                        <th>Yes or No</th>
+                        <th>Check what Applies</th>
                     </tr>
                     </thead>
                     <tbody id="result">
@@ -81,11 +81,11 @@ comments: true
                             var text = '<span> You have selected : </span>';
                             var listArray = [];
 
-                            x.addEventListener('click',function(){
-                                if (this.checked == true) {
-                                    listArray.push(this.id);
+                            x.addEventListener('click', (event) => {
+                                if (event.currentTarget.checked == true) {
+                                    listArray.push(event.currentTarget.id);
                                     symList.innerHTML = text + listArray.join(', ');
-                                    console.log(this.id);
+                                    console.log(event.currentTarget.id);
                                 } else {
                                     console.log('you unchecked this box')
                                 }
