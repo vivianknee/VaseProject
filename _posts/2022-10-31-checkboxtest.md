@@ -79,9 +79,9 @@ comments: true
 
                             x.addEventListener('change', (event) => {
                                 if (event.currentTarget.checked) {
-                                    alert(this.id + ' checked');
+                                    alert(symptom.toString() + ' checked');
                                 } else {
-                                    alert(this.id + ' not checked');
+                                    alert(symptom.toString() + ' not checked');
                                 }
                             })
 
