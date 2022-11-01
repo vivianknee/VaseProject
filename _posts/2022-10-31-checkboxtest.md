@@ -14,7 +14,7 @@ comments: true
     <title>VASE Diagnosis System</title>
 </head>
 <style>
-    tr:hover {background-color: #2596be;}
+    tr:hover {background-color: #00ABB3;}
 </style>
 <body>
     <div>
