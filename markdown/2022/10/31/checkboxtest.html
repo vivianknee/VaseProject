@@ -98,16 +98,13 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#vase-diagnosis-system">VASE Diagnosis System</a></li>
-</ul><body>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>
-<a class="anchor" href="#vase-diagnosis-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>VASE Diagnosis System</h1>
-
-
+    <html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h1>VASE Diagnosis System</h1>
+</head>
+<body id="button">
     <div>
         <p class="title">
             Please select the symptoms you have.
@@ -123,8 +120,8 @@ window.onload = wrap_img;
                     </tbody>
             </table>
     </div>
-
-
+</body>
+</html>
 
 <script> 
     const resultContainer = document.getElementById("result");
@@ -196,13 +193,13 @@ window.onload = wrap_img;
                     })
                 })
         
-        let btn = document.createElement("button");
-        btn.innerHTML = "Get Diagnosis";
-        document.body.appendChild(btn);
+        const buttonContainer = document.createElement("button");
+        buttonContainer.innerHTML = "Get Diagnosis";
+        buttonContainer.appendChild(body);
 
  </script>
 
-</body>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="vivianknee/VaseProject"
