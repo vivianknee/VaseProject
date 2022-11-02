@@ -12,14 +12,7 @@
   }
 }
 
-.btn {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-family: "Poiret One", cursive;
-  font-size: 2em;
-}
+
 
 .btn-white {
   @include button-bg(#d8f0e2);
