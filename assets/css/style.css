@@ -465,6 +465,8 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(9, 9, 9, 0.69) !important; }
 
+.instructbtn { color: white; text-decoration: none; padding: 5px 10px; border-radius: 3px; font-family: "Poiret One", cursive; font-size: 2em; }
+
 body { background-color: white; }
 
 .table-latitude { width: 100%; }
