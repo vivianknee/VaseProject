@@ -101,11 +101,8 @@ li .post-meta-description {
 }
 
 .vertical-center {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
   }
 
 .instructbtn {
