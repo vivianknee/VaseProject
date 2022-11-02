@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 $high-emph: rgba(rgb(7, 0, 0), 0.87);
 $med-emph: rgba(rgb(9, 9, 9), 0.69); //Noicee
 $low-emph: rgba(rgb(9, 8, 8), 0.38);
@@ -101,13 +102,25 @@ li .post-meta-description {
 }
 
 .instructbtn {
-    color: white;
+    color: grey;
     text-decoration: none;
     padding: 5px 10px;
-    border-radius: 3px;
+    border: 2px solid #00ABB3;
+    border-radius: 12px;
     font-family: "Poiret One", cursive;
     font-size: 2em;
+    transition-duration: 0.4s;
   }
+
+.instructbtn:hover {
+    background-color: #00ABB3;
+    color: white;
+}
+
+.instructbtn:active {
+    background-color: #00ABB3;
+    transform: translateY(4px);
+}
 
 $background: white;
 $lfs-blue: #006ac6;
