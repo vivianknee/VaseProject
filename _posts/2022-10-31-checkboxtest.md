@@ -2,7 +2,7 @@
 layout: post
 author: Vivian Ni
 categories: [markdown]
-title: Checkbox Prototype
+title: VASE Diagnosis System
 comments: true
 ---
 
