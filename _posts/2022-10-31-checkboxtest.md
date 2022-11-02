@@ -14,7 +14,7 @@ comments: true
 </head>
 <body id="button">
     <div>
-        <BUTTON ONCLICK="ShowAndHide()">View Instructions Here</BUTTON>
+        <BUTTON class="instructbtn" ONCLICK="ShowAndHide()">View Instructions Here</BUTTON>
         <div ID="Instructions" STYLE="display:none">Welcome to our VASE Diagnosis System. This system will help provide you with a diagnosis. All you need to do is select the symptoms you might have with the checkboxes below. Then click the 'Get Diagnosis' button at the button, and you'll receive a report on the condition you might have, steps to take in the future, as well as an option to get the report sent to your email.</div>
             <table class="table-latitude">
                 <thead>
