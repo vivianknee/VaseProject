@@ -79,7 +79,7 @@ title: Trimester 1 Project
                             var x = document.createElement("INPUT");
                             x.setAttribute("type", "checkbox");
                             x.setAttribute("id", symptom.toString());
-                            x.setAttribute("class", "cell-center");
+                            document.getElementById("INPUT").setAttribute("class", "cell-center");
 
                             var symList = document.getElementById('symList');
                             var text = '<span> You have selected : </span>';
