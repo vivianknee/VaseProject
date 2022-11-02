@@ -1,7 +1,7 @@
 ---
 layout: post
 author: VASE
-comments: true
+title: Trimester 1 Project
 ---
 
 <html lang="eng">
