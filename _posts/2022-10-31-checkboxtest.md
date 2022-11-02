@@ -1,8 +1,6 @@
 ---
 layout: post
-author: Vivian Ni
-categories: [markdown]
-title: VASE Diagnosis System
+author: VASE
 comments: true
 ---
 
