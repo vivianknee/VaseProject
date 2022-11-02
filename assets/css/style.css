@@ -465,6 +465,8 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(9, 9, 9, 0.69) !important; }
 
+.cell-center { text-align: center; vertical-align: middle; }
+
 .vertical-center { display: flex; justify-content: center; }
 
 .instructbtn { color: grey; text-decoration: none; text-align: center; padding: 5px 10px; border: 2px solid #00ABB3; border-radius: 12px; font-size: 16px; transition-duration: 0.4s; }
