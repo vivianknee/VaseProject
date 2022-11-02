@@ -122,6 +122,8 @@ body {
     thead {
         border-top: 2px solid $lfs-nurse;
         border-bottom: 2px solid $lfs-nurse;
+        border-left: 2px solid $lfs-nurse;
+        border-right: 2px solid $lfs-nurse;
         th {
             text-transform: uppercase;
             text-align: center;
