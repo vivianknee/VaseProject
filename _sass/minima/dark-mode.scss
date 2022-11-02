@@ -100,6 +100,14 @@ li .post-meta-description {
     color: $med-emph !important;
 }
 
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
 .instructbtn {
     color: grey;
     text-decoration: none;
@@ -107,7 +115,7 @@ li .post-meta-description {
     padding: 5px 10px;
     border: 2px solid #00ABB3;
     border-radius: 12px;
-    font-size: 2em;
+    font-size: 16px;
     transition-duration: 0.4s;
   }
 
