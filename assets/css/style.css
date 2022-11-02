@@ -483,9 +483,9 @@ body { background-color: white; }
 
 .table-latitude tbody tr { border-bottom: 1px solid #F1F1F1; color: black; }
 
-.table-latitude tbody tr td { padding: 10px; border: 1px solid #F1F1F1; }
+.table-latitude tbody tr td { padding: 10px; border: #00ABB3; }
 
-.table-latitude tbody tr th { padding-left: 10px; border: 1px solid #F1F1F1; }
+.table-latitude tbody tr th { padding-left: 10px; border: #00ABB3; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
