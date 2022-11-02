@@ -16,8 +16,8 @@ comments: true
         <div class="vertical-center">
          <h1>VASE Diagnosis System</h1>
          <BUTTON class="instructbtn" ONCLICK="ShowAndHide()">View Instructions Here</BUTTON>
+         <div ID="Instructions" STYLE="display:none">Welcome to our VASE Diagnosis System. This system will help provide you with a diagnosis. All you need to do is select the symptoms you might have with the checkboxes below. Then click the 'Get Diagnosis' button at the bottom, and you'll receive a report on the condition you might have, steps to take in the future, as well as an option to get the report sent to your email.</div>
         </div>
-        <div ID="Instructions" STYLE="display:none">Welcome to our VASE Diagnosis System. This system will help provide you with a diagnosis. All you need to do is select the symptoms you might have with the checkboxes below. Then click the 'Get Diagnosis' button at the bottom, and you'll receive a report on the condition you might have, steps to take in the future, as well as an option to get the report sent to your email.</div>
         <hr>
             <table class="table-latitude">
                 <thead>
@@ -30,7 +30,9 @@ comments: true
                     </tbody>
             </table>
     </div>
-    <BUTTON class="instructbtn">Get Diagnosis</BUTTON>
+    <div class="vertical-center">
+        <BUTTON class="instructbtn">Get Diagnosis</BUTTON>
+    </div>
 </body>
 </html>
 
