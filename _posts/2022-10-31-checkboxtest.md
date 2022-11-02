@@ -30,7 +30,7 @@ comments: true
                     </tbody>
             </table>
     </div>
-    <BUTTON>Get Diagnosis</BUTTON>
+    <BUTTON class="instructbtn">Get Diagnosis</BUTTON>
 </body>
 </html>
 
