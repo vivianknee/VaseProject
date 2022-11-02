@@ -160,11 +160,11 @@ body {
             color: $lfs-black;
             td {
                 padding: 10px;
-                border: 1px solid #F1F1F1;
+                border: $lfs-nurse;;
             }
             th {
                 padding-left: 10px;
-                border: 1px solid #F1F1F1;
+                border: $lfs-nurse;
             }
         }
     }
