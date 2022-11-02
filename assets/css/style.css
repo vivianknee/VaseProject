@@ -465,7 +465,7 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(9, 9, 9, 0.69) !important; }
 
-.vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.vertical-center { margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .instructbtn { color: grey; text-decoration: none; text-align: center; padding: 5px 10px; border: 2px solid #00ABB3; border-radius: 12px; font-size: 16px; transition-duration: 0.4s; }
 
