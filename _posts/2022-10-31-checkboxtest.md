@@ -1,5 +1,4 @@
 ---
-toc: true
 layout: post
 author: Vivian Ni
 categories: [markdown]
@@ -13,7 +12,7 @@ comments: true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>VASE Diagnosis System</h1>
 </head>
-<body>
+<body id="button">
     <div>
         <p class="title">
             Please select the symptoms you have.
@@ -102,8 +101,8 @@ comments: true
                     })
                 })
         
-        let btn = document.createElement("button");
-        btn.innerHTML = "Get Diagnosis";
-        document.body.appendChild(btn);
+        const buttonContainer = document.createElement("button");
+        buttonContainer.innerHTML = "Get Diagnosis";
+        buttonContainer.appendChild(body);
 
  </script>
