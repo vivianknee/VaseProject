@@ -481,10 +481,6 @@ body { background-color: white; }
 
 .table-latitude tbody tr th { padding-left: 10px; border: 1px solid #F1F1F1; }
 
-.table-latitude tfoot { color: #00ABB3; font-style: italic; border-bottom: 2px solid #00ABB3; }
-
-.table-latitude tfoot tr td { padding: 10px; border: 1px solid #F1F1F1; }
-
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
