@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .highlight .c { color: #998; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
@@ -465,7 +466,11 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(9, 9, 9, 0.69) !important; }
 
-.instructbtn { color: white; text-decoration: none; padding: 5px 10px; border-radius: 3px; font-family: "Poiret One", cursive; font-size: 2em; }
+.instructbtn { color: grey; text-decoration: none; padding: 5px 10px; border: 2px solid #00ABB3; border-radius: 12px; font-family: "Poiret One", cursive; font-size: 2em; transition-duration: 0.4s; }
+
+.instructbtn:hover { background-color: #00ABB3; color: white; }
+
+.instructbtn:active { background-color: #00ABB3; transform: translateY(4px); }
 
 body { background-color: white; }
 
