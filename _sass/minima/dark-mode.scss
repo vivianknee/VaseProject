@@ -144,15 +144,4 @@ body {
             }
         }
     }
-    tfoot {
-        color: $lfs-nurse;
-        font-style: italic;
-        border-bottom: 2px solid $lfs-nurse;
-        tr {
-            td {
-                padding: 10px;
-                border: 1px solid #F1F1F1;
-            }
-        }
-    }
 }

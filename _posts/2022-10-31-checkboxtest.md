@@ -11,14 +11,14 @@ comments: true
 <head>
     <meta charset ="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VASE Diagnosis System</title>
+    <h1>VASE Diagnosis System</h1>
 </head>
 <body>
     <div>
         <p class="title">
             Please select the symptoms you have.
         </p>
-            <table>
+            <table class="table-latitude">
                 <thead>
                     <tr>
                         <th>Symptoms</th>
@@ -101,4 +101,9 @@ comments: true
             
                     })
                 })
+        
+        let btn = document.createElement("button");
+        btn.innerHTML = "Get Diagnosis";
+        document.body.appendChild(btn);
+
  </script>
