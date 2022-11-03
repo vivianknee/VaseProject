@@ -69,7 +69,7 @@ title: Trimester 1 Project
         fetch(url+"diagnosis", options)
             .then(response => {
                 if (response.status !== 200) {
-                    error('GET API response failure: ' + response.status);
+                    //error('GET API response failure: ' + response.status);
                     return;
                 }
                 // valid response will have JSON data
