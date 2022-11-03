@@ -42,17 +42,8 @@ title: Trimester 1 Project
     const resultContainer = document.getElementById("result");
 
     const btnDiag = document.getElementById("btn_get_diagnosis");
-    btnDiag.addEventListener('click', (event) => {
-        sympStr = "";
-        for (const s in sympDict) {
-            if (sympDict[s]) {
-                sympStr = sympStr + s + ", ";
-            }
-        }
-        alert(sympStr);
-    })
     
-    const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/symptoms";
+    const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/";
 
     const options = {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
@@ -67,8 +58,28 @@ title: Trimester 1 Project
     // prepare fetch PUT options, clones with JS Spread Operator (...)
     const put_options = {...options, method: 'PUT'}; // clones and replaces method
 
+    btnDiag.addEventListener('click', (event) => {
+        sympStr = "";
+        for (const s in sympDict) {
+            if (sympDict[s]) {
+                sympStr = sympStr + s + ", ";
+            }
+        }
+        fetch(url+"diagnosis", options)
+            .then(response => {
+                if (response.status !== 200) {
+                    error('GET API response failure: ' + response.status);
+                    return;
+                }
+                // valid response will have JSON data
+                response.json().then(data => {
+                    alert(data)
+                }
+            })
+    })
+
     // fetch the API
-    fetch(url, options)
+    fetch(url+"symptoms", options)
         // response is a RESTful "promise" on any successful fetch
         .then(response => {
             // check for response errors
