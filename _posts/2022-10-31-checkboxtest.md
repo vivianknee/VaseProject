@@ -47,7 +47,7 @@ title: Trimester 1 Project
 
     const options = {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, *cors, same-origin
+        mode: 'cors', // no-cors, *cors, same-origin
         cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'omit', // include, *same-origin, omit
         headers: {
@@ -65,7 +65,8 @@ title: Trimester 1 Project
                 sympStr = sympStr + s + ", ";
             }
         }
-        fetch(url+"diagnosis", options)
+        const s_options = {...options, mode: 'no-cors'};
+        fetch(url+"diagnosis", s_options)
             .then(response => {
                 if (response.status !== 200) {
                     error('GET API response failure: ' + response.status);
