@@ -67,6 +67,7 @@ title: Trimester 1 Project
                 response.json().then(data => {
                     console.log(data);
 
+                        sympDict = {}
                         for (const symptom of data){
                             console.log(symptom);
                         
@@ -87,11 +88,13 @@ title: Trimester 1 Project
 
                             x.addEventListener('click', (event) => {
                                 if (event.currentTarget.checked == true) {
-                                    listArray.push(event.currentTarget.id);
-                                    symList.innerHTML = text + listArray.join(', ');
+                                    sympDict[symptom] = true;
+                                    // listArray.push(event.currentTarget.id);
+                                    // symList.innerHTML = text + listArray.join(', ');
                                     console.log(event.currentTarget.id);
                                 } else {
                                     console.log('you unchecked this box')
+                                    sympDict[symptom] = false;
                                 }
                             })
 
@@ -105,7 +108,10 @@ title: Trimester 1 Project
             
                     })
                 })
-    
+
+        post(url, options) 
+
+
     function ShowAndHide() {
         var instruct = document.getElementById('Instructions');
         if (instruct.style.display == 'none') {
