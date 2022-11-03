@@ -38,6 +38,7 @@ title: Trimester 1 Project
 
  <script> 
     const resultContainer = document.getElementById("result");
+        sympDict = {};
         
         const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/symptoms";
 
@@ -67,7 +68,6 @@ title: Trimester 1 Project
                 response.json().then(data => {
                     console.log(data);
 
-                        sympDict = {}
                         for (const symptom of data){
                             console.log(symptom);
                         
