@@ -66,7 +66,7 @@ title: Trimester 1 Project
             }
         }
         //const s_options = {...options, mode: 'no-cors'};
-        fetch(url+"diagnosis", options)
+        fetch(url+"diagnosis/<string:symp_list>", options)
             .then(response => {
                 if (response.status !== 200) {
                     //error('GET API response failure: ' + response.status);
