@@ -65,8 +65,9 @@ title: Trimester 1 Project
                 sympStr = sympStr + s + ", ";
             }
         }
-        //const s_options = {...options, mode: 'no-cors'};
-        fetch(url+"diagnosis/<string:symp_list>", options)
+
+        const s_options = {...options, mode: 'no-cors'};
+        fetch(url+"diagnosis/<string:symp_list>", s_options)
             .then(response => {
                 if (response.status !== 200) {
                     //error('GET API response failure: ' + response.status);
