@@ -125,6 +125,7 @@ window.onload = wrap_img;
 
 <script> 
     const resultContainer = document.getElementById("result");
+        sympDict = {};
         
         const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/symptoms";
 
@@ -154,7 +155,6 @@ window.onload = wrap_img;
                 response.json().then(data => {
                     console.log(data);
 
-                        sympDict = {}
                         for (const symptom of data){
                             console.log(symptom);
                         
