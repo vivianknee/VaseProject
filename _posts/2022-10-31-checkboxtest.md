@@ -65,7 +65,7 @@ title: Trimester 1 Project
                 sympStr = sympStr + s + ", ";
             }
         }
-        const s_options = {...options, mode: 'no-cors'};
+        //const s_options = {...options, mode: 'no-cors'};
         fetch(url+"diagnosis", options)
             .then(response => {
                 if (response.status !== 200) {
@@ -74,7 +74,7 @@ title: Trimester 1 Project
                 }
                 // valid response will have JSON data
                 response.json().then(data => {
-                    alert(data)
+                    console.log(data);
                 })
             })
     })
