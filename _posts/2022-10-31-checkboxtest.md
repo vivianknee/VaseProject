@@ -74,7 +74,7 @@ title: Trimester 1 Project
                 }
                 // valid response will have JSON data
                 response.json().then(data => {
-                    console.log(data);
+                    alert(data);
                 })
             })
     })
