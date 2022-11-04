@@ -33,6 +33,7 @@ title: Trimester 1 Project
     <div class="vertical-center">
         <BUTTON id="btn_get_diagnosis" class="instructbtn">Get Diagnosis</BUTTON>
     </div>
+    <p id="output"></p>
 </body>
 </html>
 
@@ -47,7 +48,7 @@ title: Trimester 1 Project
 
     const options = {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
-        mode: 'cors', // no-cors, *cors, same-origin
+        mode: 'no-cors', // no-cors, *cors, same-origin
         cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'omit', // include, *same-origin, omit
         headers: {
@@ -73,8 +74,9 @@ title: Trimester 1 Project
                     return;
                 }
                 // valid response will have JSON data
-                response.json().then(data => {
-                    console.log(data);
+                response.json().then(output => {
+                    document.getElementById('output').innerHTML = JSON.stringify(output);
+                    console.log(output);
                 })
             })
     })
