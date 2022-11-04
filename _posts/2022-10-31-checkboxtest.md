@@ -43,12 +43,11 @@ title: Trimester 1 Project
 
     const btnDiag = document.getElementById("btn_get_diagnosis");
     
-    //const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/";
-    const url = "http://127.0.0.1:5000/api/diagnosis/";
+    const url = "https://vase.nighthawkcodescrums.gq/api/diagnosis/";
 
     const options = {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, *cors, same-origin
+        mode: 'cors', // no-cors, *cors, same-origin
         cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'omit', // include, *same-origin, omit
         headers: {
@@ -67,8 +66,7 @@ title: Trimester 1 Project
             }
         }
 
-        const s_options = {...options, mode: 'no-cors'};
-        fetch(url+"diagnosis", s_options)
+        fetch(url+"diagnosis", options)
             .then(response => {
                 if (response.status !== 200) {
                     //error('GET API response failure: ' + response.status);
